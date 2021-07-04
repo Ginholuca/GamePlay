@@ -83,6 +83,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 <div align="center">
   <p align="center"> Made with 💜 by <a href="https://www.instagram.com/ginholuca/" target="_blank">Ginholuca</a> :octocat: </p>
 
-  [![Instagram Badge](https://img.shields.io/badge/-ginholuca-6633cc?style=flat-square&labelColor=6633cc&logo=instagram&logoColor=white&link=https://www.instagram.com/ginholuca/)](https://www.instagram.com/rodrigo.goncalves.s/) 
+  [![Instagram Badge](https://img.shields.io/badge/-ginholuca-6633cc?style=flat-square&labelColor=6633cc&logo=instagram&logoColor=white&link=https://www.instagram.com/ginholuca/)](https://www.instagram.com/ginholuca/) 
   [![Linkedin Badge](https://img.shields.io/badge/-Giovanni%20De%20Luca-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ginholuca)](https://www.linkedin.com/in/ginholuca) 
 </div>
