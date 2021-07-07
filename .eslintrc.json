@@ -18,8 +18,11 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
+      "no-unused-vars": "warn",
+      "no-use-before-define":"off"
     }
 }
