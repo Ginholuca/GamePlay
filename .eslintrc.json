@@ -18,13 +18,11 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint",
-        "prettier"
+        "@typescript-eslint"
     ],
     "rules": {
       "no-unused-vars": "warn",
       "no-use-before-define":"off",
-
       "camelcase": ["off", {"ignoreImports": true}]
     }
 }
