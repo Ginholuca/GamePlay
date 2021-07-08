@@ -8,6 +8,7 @@ export function Home () {
   return (
     <View>
       <View style={styles.header}>
+        <Profile/>
 
       </View>
     </View>
