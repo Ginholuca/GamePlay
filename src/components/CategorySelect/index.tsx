@@ -1,5 +1,4 @@
 import React from 'react'
-import { RectButton } from 'react-native-gesture-handler'
 import { ScrollView } from 'react-native'
 
 import { styles } from './styles'
@@ -9,7 +8,7 @@ import { Category } from '../Category'
 
 type Props = {
   categorySelected: string
-  setCategory: (categoryId : string) => void
+  setCategory: (categoryId: string) => void
 }
 
 export function CategorySelect ({ categorySelected, setCategory }: Props) {

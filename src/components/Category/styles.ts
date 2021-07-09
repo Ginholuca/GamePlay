@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   content: {
     width: 100,
-    height: 116,
+    height: 100,
     backgroundColor: theme.colors.secondary40,
     borderRadius: 8,
     alignItems: 'center',
