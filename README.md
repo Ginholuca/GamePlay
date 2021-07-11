@@ -12,11 +12,14 @@
 ![cover](.github/cover.png?style=flat) 
 
 
-## 💻 Projeto
+## 💻 Projeto 🇧🇷
 Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
 
+## 💻 Project 🇺🇸
+Application to help you connect and organize fun time and play with friends. Create groups to play your favorite games with your friends with this App that has Discord authentication.
 
-## :hammer_and_wrench: Features 
+
+## :hammer_and_wrench: Características 🇧🇷
 
 -   [ ] Autenticação Social OAuth2 com servidor do Discord.
 -   [ ] Obtém perfil do usuário cadastro no Discord (username e avatar);
@@ -28,7 +31,8 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 -   [ ] Permite redirecionar o usuário para o seu próprio servidor;
 -   [ ] Disponibiliza a função de Logout.
 
-
+ 🇧🇷 🇺🇸
+ 
 ## ✨ Tecnologias
 
 -   [ ] React Native
