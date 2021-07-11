@@ -13,7 +13,7 @@
 
 
 
-## 💻 Projeto 🇧🇷 <font color="green">BR</font>
+## 💻 Projeto 🇧🇷
 Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jogar com os amigos. Crie grupos para jogar seus games favoritos com seus amigos com esse App que possui autenticação com Discord.
 
 ## 💻 Project 🇺🇸
@@ -92,7 +92,27 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 You can view the project layout through [this link](https://www.figma.com/file/0kv33XYjvOgvKGKHBaiR07/GamePlay-NLW-Together?node-id=58913%3A83). You must have a [Figma](http://figma.com/) account to access it.
 
 
-## Executando o projeto
+## Executando o projeto 🇧🇷
+
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, inicie o projeto.
+
+```cl
+expo start
+```
+
+Lembre-se de criar o seu App no servidor do Discord para obter as credencias de autenticação. Em seguida, defina no arquivo .env as configurações do seu App (remova o example do arquivo .env.example).
+ 
+ ```cl
+REDIRECT_URI=
+SCOPE=
+RESPONSE_TYPE=
+CLIENT_ID=
+CDN_IMAGE=
+```
+
+
+## Executando o projeto 🇺🇸
 
 Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
 Em seguida, inicie o projeto.
