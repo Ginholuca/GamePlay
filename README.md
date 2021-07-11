@@ -31,7 +31,17 @@ Application to help you connect and organize fun time and play with friends. Cre
 -   [ ] Permite redirecionar o usuário para o seu próprio servidor;
 -   [ ] Disponibiliza a função de Logout.
 
- 🇧🇷 🇺🇸
+## :hammer_and_wrench: Features 🇺🇸
+ 
+- [ ] OAuth2 Social Authentication with Discord server.
+- [ ] Gets user profile registered in Discord (username and avatar);
+- [ ] Lists the Discord servers that the user is part of;
+- [ ] Allows you to schedule matches;
+- [ ] Allows you to filter matches by category;
+- [ ] Displays if the match was scheduled on its own server (host) or on other servers (guest);
+- [ ] Share the invitation to join the user's server;
+- [ ] Allows you to redirect the user to your own server;
+- [ ] Provides the Logout function.
  
 ## ✨ Tecnologias
 
