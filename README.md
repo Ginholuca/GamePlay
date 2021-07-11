@@ -19,7 +19,7 @@ Aplicativo para lhe ajudar a conectar-se e organiza o momento de diversão e jog
 Application to help you connect and organize fun time and play with friends. Create groups to play your favorite games with your friends with this App that has Discord authentication.
 
 
-## :hammer_and_wrench: Características 🇧🇷
+## :hammer_and_wrench: Características <span color="#00FF00">🇧🇷</span>
 
 -   [ ] Autenticação Social OAuth2 com servidor do Discord.
 -   [ ] Obtém perfil do usuário cadastro no Discord (username e avatar);
