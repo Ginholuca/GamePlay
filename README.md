@@ -112,16 +112,16 @@ CDN_IMAGE=
 ```
 
 
-## Executando o projeto 🇺🇸
+## Running the project 🇺🇸
 
-Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
-Em seguida, inicie o projeto.
+Use **yarn** or **npm install** to install project dependencies.
+Then start the project.
 
 ```cl
 expo start
 ```
 
-Lembre-se de criar o seu App no servidor do Discord para obter as credencias de autenticação. Em seguida, defina no arquivo .env as configurações do seu App (remova o example do arquivo .env.example).
+Remember to create your App on the Discord server to get the authentication credentials. Then define your App settings in the .env file (remove the example from the .env.example file).
  
  ```cl
 REDIRECT_URI=
