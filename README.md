@@ -43,7 +43,26 @@ Application to help you connect and organize fun time and play with friends. Cre
 - [ ] Allows you to redirect the user to your own server;
 - [ ] Provides the Logout function.
  
-## ✨ Tecnologias
+## ✨ Tecnologias 🇧🇷
+
+-   [ ] React Native
+-   [ ] Typescript
+-   [ ] Expo
+-   [ ] Context API
+-   [ ] Async Storage
+-   [ ] Vector Icons
+-   [ ] React Native Svg e Svg Transform
+-   [ ] Axios
+-   [ ] Gradient colors
+-   [ ] OAuth2 Discord 
+-   [ ] Expo Google Fonts
+-   [ ] React Navigation Stack
+-   [ ] React Native Gesture Handler
+-   [ ] Expo Authentication
+-   [ ] React Native Share
+-   [ ] Deep Link
+
+## ✨ Technologies 🇺🇸
 
 -   [ ] React Native
 -   [ ] Typescript
