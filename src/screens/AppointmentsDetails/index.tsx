@@ -68,6 +68,9 @@ export function AppointmentsDetails () {
   <FlatList
   data={members}
   keyExtractor={item => item.id}
+  renderItem={({item}) =>(
+
+  )}
   />
 
   </Background>)
