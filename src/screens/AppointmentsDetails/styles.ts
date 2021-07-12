@@ -25,5 +25,9 @@ export const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: theme.fonts.text400,
     color: theme.colors.heading
+  },
+  members: {
+    marginLeft: 24,
+    marginTop: 27
   }
 })

@@ -17,6 +17,7 @@ type Props ={
 }
 
 export function Member ({ data }: Props) {
+  const isOnline = data.status === 'online'
   return (
   <View style={styles.container}>
     <Avatar urlImage={data.avatar_url} />
@@ -27,9 +28,11 @@ export function Member ({ data }: Props) {
       </Text>
 
       <View style={styles.status}>
-        <View style={[styles.bulletStatus]}>
 
-        </View>
+      <Text style={styles.nameStatus}>
+        {isOnline ? 'Disponível' : 'Ocupado'}
+      </Text>
+
       </View>
     </View>
   </View>

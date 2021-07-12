@@ -12,6 +12,8 @@ import { theme } from '../../global/styles/theme'
 import BannerImg from '../../assets/banner.png'
 
 import { styles } from './styles'
+import { Member } from '../../components/Member'
+import { ListDivider } from '../../components/ListDivider'
 
 export function AppointmentsDetails () {
   const members = [
@@ -68,9 +70,11 @@ export function AppointmentsDetails () {
   <FlatList
   data={members}
   keyExtractor={item => item.id}
-  renderItem={({item}) =>(
-
+  renderItem={({ item }) => (
+    <Member data={item} />
   )}
+  ItemSeparatorComponent={() => <ListDivider />}
+  style={styles.members}
   />
 
   </Background>)
