@@ -2,14 +2,15 @@ import React from 'react'
 import { View } from 'react-native'
 
 import { Background } from '../../components/Background'
+import { Header } from '../../components/Header'
 
 // import { Container } from './styles';
 
-const AppointmentsDetails: React.FC = () => {
+export function AppointmentsDetails () {
   return (
   <Background>
-
+    <Header
+      title="Detalhes"
+    />
   </Background>)
 }
-
-export default AppointmentsDetails
