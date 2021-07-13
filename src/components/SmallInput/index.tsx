@@ -1,12 +1,14 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, TextInput, TextInputAndroidProps } from 'react-native'
 
 import { styles } from './styles'
 
-export function SmallInput () {
+export function SmallInput ({ ...rest }: TextInputAndroidProps) {
   return (
-  <View>
-
-  </View>
+  <TextInput
+    style={styles.container}
+    keyboardType="numeric"
+    {...rest}
+  />
   )
 }

@@ -11,6 +11,7 @@ import { Header } from '../../components/Header'
 import { theme } from '../../global/styles/theme'
 import { styles } from './styles'
 import { GuildIcon } from '../../components/GuildIcon'
+import { SmallInput } from '../../components/SmallInput'
 
 export function AppointmentsCreate () {
   const [category, setCategory] = useState('')
@@ -52,6 +53,13 @@ export function AppointmentsCreate () {
 
       </View>
      </RectButton>
+
+      <View style={styles.field}>
+      </View>
+        <Text>
+          Dia e mês
+        </Text>
+        <SmallInput />
     </View>
 
   </Background>)
