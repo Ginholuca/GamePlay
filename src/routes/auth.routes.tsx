@@ -32,6 +32,11 @@ export function AuthRoutes () {
                 component={AppointmentsDetails}
             />
 
+            <Screen
+                name="AppointmentsCreate"
+                component={AppointmentsCreate}
+            />
+
         </Navigator>
   )
 }
