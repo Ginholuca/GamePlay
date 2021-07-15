@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler'
 
-import { View, ImageBackground, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
+import { View, Platform, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
 
 import { styles } from './styles'
 import { theme } from '../../global/styles/theme'
@@ -13,12 +13,17 @@ import { Background } from '../../components/Background'
 import { GuildIcon } from '../../components/GuildIcon'
 import { TextArea } from '../../components/TextArea'
 import { Header } from '../../components/Header'
+import { Button } from '../../components/Button'
 
 export function AppointmentsCreate () {
   const [category, setCategory] = useState('')
 
   return (
-  <Background>
+<KeyboardAvoidingView
+  behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+  style={styles.container} >
+
+    <ScrollView>
     <Header
       title="Agendar partida"
     />
@@ -103,6 +108,13 @@ export function AppointmentsCreate () {
       autoCorrect={false}
     />
 
+      <View style={styles.footer}>
+        <Button title="Agendar" />
+      </View>
+
   </View>
-  </Background>)
+
+  </ScrollView>
+</KeyboardAvoidingView>
+  )
 }
