@@ -14,6 +14,8 @@ import { GuildIcon } from '../../components/GuildIcon'
 import { TextArea } from '../../components/TextArea'
 import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
+import { ModalView } from '../../components/ModalView'
+import { Guilds } from '../Guilds'
 
 export function AppointmentsCreate () {
   const [category, setCategory] = useState('')
@@ -111,10 +113,12 @@ export function AppointmentsCreate () {
       <View style={styles.footer}>
         <Button title="Agendar" />
       </View>
-
   </View>
-
   </ScrollView>
+
+  <ModalView>
+    <Guilds />
+  </ModalView>
 </KeyboardAvoidingView>
   )
 }
