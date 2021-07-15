@@ -2,11 +2,16 @@ import React from 'react'
 import { View, FlatList } from 'react-native'
 
 import { Guild } from '../../components/Guild'
+import { GuildProps } from '../../components/Appointment'
 import { ListDivider } from '../../components/ListDivider'
 
 import { styles } from './styles'
 
-export function Guilds () {
+type Props = {
+  handleGuildSelect: (guild: GuildProps) => void
+}
+
+export function Guilds ({ handleGuildSelect }: Props) {
   const guilds = [
     {
       id: '1',
@@ -21,7 +26,10 @@ export function Guilds () {
       data={guilds}
       keyExtractor={item => item.id}
       renderItem={({ item }) => (
-        <Guild data={item} />
+        <Guild
+          data={item}
+          onPress={() => handleGuildSelect(item)}
+        />
       )}
       showsVerticalScrollIndicator={false}
       ItemSeparatorComponent={() => <ListDivider />}
