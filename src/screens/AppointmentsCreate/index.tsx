@@ -4,14 +4,15 @@ import { RectButton } from 'react-native-gesture-handler'
 
 import { View, ImageBackground, Text, FlatList } from 'react-native'
 
-import { Background } from '../../components/Background'
-import { CategorySelect } from '../../components/CategorySelect'
-import { Header } from '../../components/Header'
-
-import { theme } from '../../global/styles/theme'
 import { styles } from './styles'
-import { GuildIcon } from '../../components/GuildIcon'
+import { theme } from '../../global/styles/theme'
+
+import { CategorySelect } from '../../components/CategorySelect'
 import { SmallInput } from '../../components/SmallInput'
+import { Background } from '../../components/Background'
+import { GuildIcon } from '../../components/GuildIcon'
+import { TextArea } from '../../components/TextArea'
+import { Header } from '../../components/Header'
 
 export function AppointmentsCreate () {
   const [category, setCategory] = useState('')
@@ -54,13 +55,54 @@ export function AppointmentsCreate () {
       </View>
      </RectButton>
 
-      <View style={styles.field}>
-      </View>
+    <View style={styles.field}>
+      <View>
         <Text>
           Dia e mês
         </Text>
-        <SmallInput />
+
+        <View style={styles.column}>
+          <SmallInput maxLength={2} />
+          <Text style={styles.divider}>
+            /
+          </Text>
+          <SmallInput maxLength={2} />
+        </View>
+
+      </View>
+
+      <View>
+        <Text>
+          Horário
+        </Text>
+
+        <View style={styles.column}>
+          <SmallInput maxLength={2} />
+          <Text style={styles.divider}>
+            :
+          </Text>
+          <SmallInput maxLength={2} />
+        </View>
+      </View>
     </View>
 
+    <View style={[styles.field, { marginBottom: 12 }]}>
+      <Text style={styles.label}>
+        Descrição
+      </Text>
+
+      <Text style={styles.caracteresLimit}>
+        Max 100 caracteres
+      </Text>
+    </View>
+
+    <TextArea
+      multiline
+      maxLength={100}
+      numberOfLines={5}
+      autoCorrect={false}
+    />
+
+  </View>
   </Background>)
 }
