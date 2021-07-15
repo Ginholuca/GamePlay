@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler'
 
-import { View, ImageBackground, Text, FlatList } from 'react-native'
+import { View, ImageBackground, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
 
 import { styles } from './styles'
 import { theme } from '../../global/styles/theme'
