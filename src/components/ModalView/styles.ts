@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
     borderRadius: 2,
     backgroundColor: theme.colors.secondary30,
     alignItems: 'center',
-    marginTop: 13
+    marginTop: 13,
+    marginBottom: 103
   }
 })
