@@ -48,12 +48,12 @@ export function Home () {
     categoryId === category ? setCategory('') : setCategory(categoryId)
   }
 
-  function handleAppointmentDetails () {
-    navigation.navigate('AppointmentDetails')
+  function handleAppointmentsDetails () {
+    navigation.navigate('AppointmentsDetails')
   }
 
-  function handleAppointmentCreate () {
-    navigation.navigate('AppointmentCreate')
+  function handleAppointmentsCreate () {
+    navigation.navigate('AppointmentsCreate')
   }
 
   return (
@@ -61,7 +61,7 @@ export function Home () {
 
     <View style={styles.header}>
         <Profile/>
-        <ButtonAdd onPress={handleAppointmentCreate}/>
+        <ButtonAdd onPress={handleAppointmentsCreate}/>
 
       </View>
 
@@ -81,7 +81,7 @@ export function Home () {
           keyExtractor={item => item.id}
           renderItem={({ item }) => (
             <Appointment data={item}
-              onPress={handleAppointmentDetails}
+              onPress={handleAppointmentsDetails}
             />
           )}
           ItemSeparatorComponent={() => <ListDivider />}
