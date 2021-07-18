@@ -42,7 +42,7 @@ export function SignIn () {
         {
           loading
             ? <ActivityIndicator color={theme.colors.primary}/>
-            : <ButtonIcon title="Entrar com DIscord"
+            : <ButtonIcon title="Entrar com Discord"
           onPress={handleSignIn}
           />
         }

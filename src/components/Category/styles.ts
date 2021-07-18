@@ -8,12 +8,12 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 8
+    marginRight: 8,
+    paddingBottom: 10
   },
   content: {
     width: 100,
     height: 100,
-
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'space-between',
