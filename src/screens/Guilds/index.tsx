@@ -16,7 +16,13 @@ export function Guilds ({ handleGuildSelect }: Props) {
     {
       id: '1',
       name: 'Lendários',
-      icon: null,
+      icon: 'https://ci.phncdn.com/pics/users/318/887/681/avatar1570986139/(m=eidYGCjadOf)(mh=VZZsrvQOsh4kk3aW)200x200.jpg',
+      owner: true
+    },
+    {
+      id: '2',
+      name: 'Lendários',
+      icon: 'https://ci.phncdn.com/pics/users/318/887/681/avatar1570986139/(m=eidYGCjadOf)(mh=VZZsrvQOsh4kk3aW)200x200.jpg',
       owner: true
     }
   ]

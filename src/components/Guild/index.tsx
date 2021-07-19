@@ -42,7 +42,7 @@ export function Guild ({ data, ...rest }: Props) {
       <Feather
         name="chevron-right"
         color={theme.colors.heading}
-        size={24 }
+        size={24}
       />
 
   </TouchableOpacity>
