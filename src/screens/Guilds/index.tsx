@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, FlatList } from 'react-native'
 
-import { Guild } from '../../components/Guild'
-import { GuildProps } from '../../components/Appointment'
+import { Guild, GuildProps } from '../../components/Guild'
+
 import { ListDivider } from '../../components/ListDivider'
 
 import { styles } from './styles'
@@ -12,20 +12,8 @@ type Props = {
 }
 
 export function Guilds ({ handleGuildSelect }: Props) {
-  const guilds = [
-    {
-      id: '1',
-      name: 'Lendários',
-      icon: 'https://ci.phncdn.com/pics/users/318/887/681/avatar1570986139/(m=eidYGCjadOf)(mh=VZZsrvQOsh4kk3aW)200x200.jpg',
-      owner: true
-    },
-    {
-      id: '2',
-      name: 'Lendários',
-      icon: 'https://ci.phncdn.com/pics/users/318/887/681/avatar1570986139/(m=eidYGCjadOf)(mh=VZZsrvQOsh4kk3aW)200x200.jpg',
-      owner: true
-    }
-  ]
+  const [guilds, setGuilds] = useState<GuildProps[]>([])
+
   return (
   <View style={styles.container}>
     <FlatList
@@ -40,7 +28,7 @@ export function Guilds ({ handleGuildSelect }: Props) {
       showsVerticalScrollIndicator={false}
       ItemSeparatorComponent={() => <ListDivider isCentered />}
       ListHeaderComponent={() => <ListDivider isCentered />}
-      contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
+      contentContainerStyle={{ paddingBottom: 68, paddingTop: 39 }}
       style={styles.guilds}
     />
 
