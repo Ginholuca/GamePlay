@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler'
+import uuid from 'react-native-uuid'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 import { View, Platform, Text, ScrollView, KeyboardAvoidingView } from 'react-native'
 
+import { COLLECTION_APPOINTMENTS } from '../../config/database'
 import { styles } from './styles'
 import { theme } from '../../global/styles/theme'
+import { Guilds } from '../Guilds'
 
 import { CategorySelect } from '../../components/CategorySelect'
 import { SmallInput } from '../../components/SmallInput'
@@ -15,7 +19,6 @@ import { TextArea } from '../../components/TextArea'
 import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
 import { ModalView } from '../../components/ModalView'
-import { Guilds } from '../Guilds'
 import { GuildProps } from '../../components/Guild'
 
 export function AppointmentsCreate () {
@@ -44,6 +47,19 @@ export function AppointmentsCreate () {
 
   function handleCategorySelect (categoryId: string) {
     setCategory(categoryId)
+  }
+
+  async function handleSave () {
+    const newAppointment = {
+      id: uuid.v4(),
+      guild,
+      category,
+      date: `${day}/${month} às ${hour}:${minute}h`,
+      description
+    }
+
+    const storage = await AsyncStorage.getItem(COLLECTION_APPOINTMENTS)
+    const appointments = storage
   }
 
   return (
