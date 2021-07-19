@@ -96,11 +96,17 @@ export function AppointmentsCreate () {
         </Text>
 
         <View style={styles.column}>
-          <SmallInput maxLength={2} />
+          <SmallInput
+          maxLength={2}
+          onChangeText={setDay}
+          />
           <Text style={styles.divider}>
             /
           </Text>
-          <SmallInput maxLength={2} />
+          <SmallInput
+          maxLength={2}
+          onChangeText={setMonth}
+          />
         </View>
 
       </View>
@@ -111,11 +117,17 @@ export function AppointmentsCreate () {
         </Text>
 
         <View style={styles.column}>
-          <SmallInput maxLength={2} />
+          <SmallInput
+          maxLength={2}
+          onChangeText={setHour}
+          />
           <Text style={styles.divider}>
             :
           </Text>
-          <SmallInput maxLength={2} />
+          <SmallInput
+          maxLength={2}
+          onChangeText={setMinute}
+          />
         </View>
       </View>
     </View>
@@ -135,6 +147,7 @@ export function AppointmentsCreate () {
       maxLength={100}
       numberOfLines={5}
       autoCorrect={false}
+      onChangeText={setDescription}
     />
 
       <View style={styles.footer}>
