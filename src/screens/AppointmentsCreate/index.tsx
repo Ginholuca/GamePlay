@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Feather } from '@expo/vector-icons'
 import { RectButton } from 'react-native-gesture-handler'
+import 'react-native-get-random-values'
 import uuid from 'react-native-uuid'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
