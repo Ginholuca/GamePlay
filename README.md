@@ -70,7 +70,7 @@ Application to help you connect and organize fun time and play with friends. Cre
 -   [ ] React Native Share
 -   [ ] Deep Link
 
-<br />
+<br /> 
 
 ## ✨ Technologies 🇺🇸
 
