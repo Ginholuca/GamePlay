@@ -102,7 +102,7 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 ## 🔖 Layout 🇺🇸
 You can view the project layout through [this link](https://www.figma.com/file/0kv33XYjvOgvKGKHBaiR07/GamePlay-NLW-Together?node-id=58913%3A83). You must have a [Figma](http://figma.com/) account to access it.
 
-<br />
+<br /> 
 
 ## Executando o projeto 🇧🇷
 
